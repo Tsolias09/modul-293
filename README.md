@@ -242,10 +242,10 @@ Die Website ist nicht allgemein, sondern auf Nikos Skartsolias zugeschnitten:
 Die Website kann über einen Webserver oder GitHub Pages veröffentlicht werden.
 
 **Link zur veröffentlichten Website:**  
-`HIER_LINK_EINFÜGEN`
+*[Link zur Webseite](https://tsolias09.github.io/modul-293/)*
 
 **Link zum Git-Repository:**  
-`HIER_REPOSITORY_LINK_EINFÜGEN`
+*[Link zum Repo](https://github.com/Tsolias09/modul-293)*
 
 ---
 

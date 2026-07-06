@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Nikos Skartsolias – Player Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Zum Inhalt springen</a>
+    <div class="loader"><div>NS</div></div>
+    <header class="header">
+      <a class="logo" href="index.html"><span>NIKOS</span> SKARTSOLIAS</a
+      ><button class="menu" aria-label="Navigation öffnen">☰</button>
+      <nav class="nav">
+        <a href="index.html">HOME</a><a href="about.html">ABOUT ME</a
+        ><a class="active" href="profile.html">PLAYER PROFILE</a
+        ><a href="career.html">CAREER</a><a href="games.html">GAMES</a
+        ><a href="statistics.html">STATISTICS</a
+        ><a href="performance.html">PERFORMANCE</a><a href="media.html">MEDIA</a
+        ><a href="highlights.html">HIGHLIGHTS</a><a href="vision.html">VISION</a
+        ><a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="section full">
+        <p class="eyebrow reveal">Player Profile</p>
+        <h1 class="reveal">Mein Spielerprofil</h1>
+        <div class="profile-grid">
+          <article class="card glass reveal">
+            <h3>Persönliche Informationen</h3>
+            <p>
+              Position: Offensives Mittelfeld<br />Starker Fuss: Rechts<br />Grösse:
+              167 cm<br />Gewicht: 53 kg<br />Spielstil: Kreativer
+              Mittelfeldspieler mit starkem Dribbling, starkem Passspiel, hoher
+              Beweglichkeit und starkem offensivem 1-gegen-1.
+            </p>
+          </article>
+          <article class="card glass reveal">
+            <h3>Stärken</h3>
+            <div class="bars">
+              <label>Passspiel <i style="width: 92%"></i></label
+              ><label>Ausdauer <i style="width: 82%"></i></label
+              ><label>Spielübersicht <i style="width: 90%"></i></label
+              ><label>Defensivarbeit <i style="width: 80%"></i></label
+              ><label>Tempo <i style="width: 88%"></i></label>
+            </div>
+          </article>
+          <article class="card glass reveal">
+            <h3>Performance Radar</h3>
+            <canvas id="radar" width="380" height="300"></canvas>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Nikos Skartsolias. Persönliches Fussball Portfolio.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

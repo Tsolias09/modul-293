@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Nikos Skartsolias – Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Zum Inhalt springen</a>
+    <div class="loader"><div>NS</div></div>
+    <header class="header">
+      <a class="logo" href="index.html"><span>NIKOS</span> SKARTSOLIAS</a
+      ><button class="menu" aria-label="Navigation öffnen">☰</button>
+      <nav class="nav">
+        <a href="index.html">HOME</a><a href="about.html">ABOUT ME</a
+        ><a href="profile.html">PLAYER PROFILE</a
+        ><a href="career.html">CAREER</a
+        ><a class="active" href="games.html">GAMES</a
+        ><a href="statistics.html">STATISTICS</a
+        ><a href="performance.html">PERFORMANCE</a><a href="media.html">MEDIA</a
+        ><a href="highlights.html">HIGHLIGHTS</a><a href="vision.html">VISION</a
+        ><a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="section full">
+        <div class="reveal">
+          <p class="eyebrow">Games</p>
+          <h1>Spiele & Saison</h1>
+          <p class="lead">
+            FC Schwamendingen a – Junioren B 1. Stärkeklasse, Frühjahrsrunde
+            Gruppe 6. Diese Seite zeigt Spielplan, Resultate, Filter und
+            Rangliste.
+          </p>
+          <div class="match-hero-card glass">
+            <div class="team">FC Schwamendingen a</div>
+            <div class="result-big">3 : 0 <span>F</span></div>
+            <div class="team">FC Embrach a</div>
+          </div>
+          <div class="match-meta">
+            <div>
+              <span class="eyebrow">Letztes Spiel</span>
+              <p>So 21.06.2026</p>
+            </div>
+            <div>
+              <span class="eyebrow">Status</span>
+              <p>Forfait-Sieg</p>
+            </div>
+            <div>
+              <span class="eyebrow">Wettbewerb</span>
+              <p>Junioren B 1. Stärkeklasse</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <p class="eyebrow reveal">Filter</p>
+        <h1 class="reveal">Alle Spiele der Liga</h1>
+        <div class="games-filter glass reveal">
+          <input
+            id="gameSearch"
+            type="search"
+            placeholder="Suche nach Team, Datum, Resultat oder Spielnummer"
+          />
+          <div class="filter-actions">
+            <button class="filter-btn active" data-game-filter="alle">
+              Alle</button
+            ><button class="filter-btn" data-game-filter="schwamendingen">
+              Nur FC Schwamendingen</button
+            ><button class="filter-btn" data-game-filter="heim">
+              Heimspiele</button
+            ><button class="filter-btn" data-game-filter="auswärts">
+              Auswärtsspiele</button
+            ><button class="filter-btn" data-game-filter="gespielt">
+              Gespielt</button
+            ><button class="filter-btn" data-game-filter="forfait">
+              Forfait</button
+            ><button class="filter-btn" data-game-filter="nullwertung">
+              Nullwertung
+            </button>
+          </div>
+        </div>
+        <div class="table-wrap reveal">
+          <table class="premium-table">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Zeit</th>
+                <th>Heimteam</th>
+                <th>Auswärtsteam</th>
+                <th>Resultat</th>
+                <th>Spielnr.</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 22.03.2026 11:00 fc diessenhofen fc brüttisellen-dietlikon 3:2 222486 gespielt"
+              >
+                <td>So 22.03.2026</td>
+                <td>11:00</td>
+                <td>FC Diessenhofen</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>3:2</td>
+                <td>222486</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 22.03.2026 11:00 fc phönix seen b fc kloten a 1:2 222489 gespielt"
+              >
+                <td>So 22.03.2026</td>
+                <td>11:00</td>
+                <td>FC Phönix Seen b</td>
+                <td>FC Kloten a</td>
+                <td>1:2</td>
+                <td>222489</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 22.03.2026 12:30 fc embrach a fc bülach b 5:0 222485 gespielt"
+              >
+                <td>So 22.03.2026</td>
+                <td>12:30</td>
+                <td>FC Embrach a</td>
+                <td>FC Bülach b</td>
+                <td>5:0</td>
+                <td>222485</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 22.03.2026 13:00 fc oberwinterthur * fc wallisellen 3:3 222487 gespielt"
+              >
+                <td>So 22.03.2026</td>
+                <td>13:00</td>
+                <td>FC Oberwinterthur *</td>
+                <td>FC Wallisellen</td>
+                <td>3:3</td>
+                <td>222487</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 29.03.2026 10:30 fc wallisellen fc diessenhofen 5:7 222492 gespielt"
+              >
+                <td>So 29.03.2026</td>
+                <td>10:30</td>
+                <td>FC Wallisellen</td>
+                <td>FC Diessenhofen</td>
+                <td>5:7</td>
+                <td>222492</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 29.03.2026 11:00 fc brüttisellen-dietlikon fc embrach a 6:2 222493 gespielt"
+              >
+                <td>So 29.03.2026</td>
+                <td>11:00</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>FC Embrach a</td>
+                <td>6:2</td>
+                <td>222493</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="auswärts"
+                data-text="so 29.03.2026 15:00 fc bülach b fc schwamendingen a 3:0 222494 gespielt"
+              >
+                <td>So 29.03.2026</td>
+                <td>15:00</td>
+                <td>FC Bülach b</td>
+                <td>FC Schwamendingen a</td>
+                <td>3:0</td>
+                <td>222494</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 29.03.2026 15:00 fc kloten a fc bassersdorf a 2:5 222490 gespielt"
+              >
+                <td>So 29.03.2026</td>
+                <td>15:00</td>
+                <td>FC Kloten a</td>
+                <td>FC Bassersdorf a</td>
+                <td>2:5</td>
+                <td>222490</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 12.04.2026 13:00 fc embrach a fc wallisellen 6:2 222496 gespielt"
+              >
+                <td>So 12.04.2026</td>
+                <td>13:00</td>
+                <td>FC Embrach a</td>
+                <td>FC Wallisellen</td>
+                <td>6:2</td>
+                <td>222496</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 12.04.2026 14:30 fc oberwinterthur * fc kloten a 3:0 222498 gespielt"
+              >
+                <td>So 12.04.2026</td>
+                <td>14:30</td>
+                <td>FC Oberwinterthur *</td>
+                <td>FC Kloten a</td>
+                <td>3:0</td>
+                <td>222498</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="heim"
+                data-text="so 12.04.2026 14:30 fc schwamendingen a fc brüttisellen-dietlikon 1:6 222495 gespielt"
+              >
+                <td>So 12.04.2026</td>
+                <td>14:30</td>
+                <td>FC Schwamendingen a</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>1:6</td>
+                <td>222495</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 12.04.2026 16:00 fc bassersdorf a fc phönix seen b 8:0 222499 gespielt"
+              >
+                <td>So 12.04.2026</td>
+                <td>16:00</td>
+                <td>FC Bassersdorf a</td>
+                <td>FC Phönix Seen b</td>
+                <td>8:0</td>
+                <td>222499</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 19.04.2026 10:00 fc phönix seen b fc oberwinterthur * 0:2 222500 gespielt"
+              >
+                <td>So 19.04.2026</td>
+                <td>10:00</td>
+                <td>FC Phönix Seen b</td>
+                <td>FC Oberwinterthur *</td>
+                <td>0:2</td>
+                <td>222500</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 19.04.2026 10:30 fc kloten a fc diessenhofen 2:3 222501 gespielt"
+              >
+                <td>So 19.04.2026</td>
+                <td>10:30</td>
+                <td>FC Kloten a</td>
+                <td>FC Diessenhofen</td>
+                <td>2:3</td>
+                <td>222501</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="auswärts"
+                data-text="so 19.04.2026 10:30 fc wallisellen fc schwamendingen a 6:4 222503 gespielt"
+              >
+                <td>So 19.04.2026</td>
+                <td>10:30</td>
+                <td>FC Wallisellen</td>
+                <td>FC Schwamendingen a</td>
+                <td>6:4</td>
+                <td>222503</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 19.04.2026 16:15 fc brüttisellen-dietlikon fc bülach b 4:6 222504 gespielt"
+              >
+                <td>So 19.04.2026</td>
+                <td>16:15</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>FC Bülach b</td>
+                <td>4:6</td>
+                <td>222504</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 10.05.2026 11:00 fc diessenhofen fc phönix seen b 5:1 222508 gespielt"
+              >
+                <td>So 10.05.2026</td>
+                <td>11:00</td>
+                <td>FC Diessenhofen</td>
+                <td>FC Phönix Seen b</td>
+                <td>5:1</td>
+                <td>222508</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 10.05.2026 12:30 fc embrach a fc kloten a 4:2 222507 gespielt"
+              >
+                <td>So 10.05.2026</td>
+                <td>12:30</td>
+                <td>FC Embrach a</td>
+                <td>FC Kloten a</td>
+                <td>4:2</td>
+                <td>222507</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 10.05.2026 13:00 fc oberwinterthur * fc bassersdorf a 1:2 222509 gespielt"
+              >
+                <td>So 10.05.2026</td>
+                <td>13:00</td>
+                <td>FC Oberwinterthur *</td>
+                <td>FC Bassersdorf a</td>
+                <td>1:2</td>
+                <td>222509</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 10.05.2026 14:00 fc bülach b fc wallisellen 4:0 222505 gespielt"
+              >
+                <td>So 10.05.2026</td>
+                <td>14:00</td>
+                <td>FC Bülach b</td>
+                <td>FC Wallisellen</td>
+                <td>4:0</td>
+                <td>222505</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 17.05.2026 10:30 fc wallisellen fc brüttisellen-dietlikon 0:5 222514 gespielt"
+              >
+                <td>So 17.05.2026</td>
+                <td>10:30</td>
+                <td>FC Wallisellen</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>0:5</td>
+                <td>222514</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 17.05.2026 11:00 fc phönix seen b fc embrach a 1:2 222511 gespielt"
+              >
+                <td>So 17.05.2026</td>
+                <td>11:00</td>
+                <td>FC Phönix Seen b</td>
+                <td>FC Embrach a</td>
+                <td>1:2</td>
+                <td>222511</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="auswärts"
+                data-text="so 17.05.2026 11:30 fc kloten a fc schwamendingen a 3:4 222512 gespielt"
+              >
+                <td>So 17.05.2026</td>
+                <td>11:30</td>
+                <td>FC Kloten a</td>
+                <td>FC Schwamendingen a</td>
+                <td>3:4</td>
+                <td>222512</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 17.05.2026 14:30 fc bassersdorf a fc diessenhofen 4:3 222510 gespielt"
+              >
+                <td>So 17.05.2026</td>
+                <td>14:30</td>
+                <td>FC Bassersdorf a</td>
+                <td>FC Diessenhofen</td>
+                <td>4:3</td>
+                <td>222510</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="nullwertung"
+                data-side="liga"
+                data-text="mi 27.05.2026 19:30 fc brüttisellen-dietlikon fc kempttal 0:0 n 222515 nullwertung"
+              >
+                <td>Mi 27.05.2026</td>
+                <td>19:30</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>FC Kempttal</td>
+                <td>0:0 N</td>
+                <td>222515</td>
+                <td>Nullwertung</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="mi 27.05.2026 20:00 fc embrach a fc bassersdorf a 1:3 222518 gespielt"
+              >
+                <td>Mi 27.05.2026</td>
+                <td>20:00</td>
+                <td>FC Embrach a</td>
+                <td>FC Bassersdorf a</td>
+                <td>1:3</td>
+                <td>222518</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="forfait"
+                data-side="heim"
+                data-text="mi 27.05.2026 20:15 fc schwamendingen a fc phönix seen b 3:0 f 222517 forfait"
+              >
+                <td>Mi 27.05.2026</td>
+                <td>20:15</td>
+                <td>FC Schwamendingen a</td>
+                <td>FC Phönix Seen b</td>
+                <td>3:0 F</td>
+                <td>222517</td>
+                <td>Forfait</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="mi 27.05.2026 20:15 fc bülach b fc kloten a 1:2 222516 gespielt"
+              >
+                <td>Mi 27.05.2026</td>
+                <td>20:15</td>
+                <td>FC Bülach b</td>
+                <td>FC Kloten a</td>
+                <td>1:2</td>
+                <td>222516</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 31.05.2026 11:00 fc phönix seen b fc bülach b 7:4 222522 gespielt"
+              >
+                <td>So 31.05.2026</td>
+                <td>11:00</td>
+                <td>FC Phönix Seen b</td>
+                <td>FC Bülach b</td>
+                <td>7:4</td>
+                <td>222522</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="auswärts"
+                data-text="so 31.05.2026 12:00 fc bassersdorf a fc schwamendingen a 3:6 222521 gespielt"
+              >
+                <td>So 31.05.2026</td>
+                <td>12:00</td>
+                <td>FC Bassersdorf a</td>
+                <td>FC Schwamendingen a</td>
+                <td>3:6</td>
+                <td>222521</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 31.05.2026 13:00 fc oberwinterthur * fc embrach a 3:3 222520 gespielt"
+              >
+                <td>So 31.05.2026</td>
+                <td>13:00</td>
+                <td>FC Oberwinterthur *</td>
+                <td>FC Embrach a</td>
+                <td>3:3</td>
+                <td>222520</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="nullwertung"
+                data-side="liga"
+                data-text="so 31.05.2026 16:00 fc kempttal fc wallisellen 0:0 n 222524 nullwertung"
+              >
+                <td>So 31.05.2026</td>
+                <td>16:00</td>
+                <td>FC Kempttal</td>
+                <td>FC Wallisellen</td>
+                <td>0:0 N</td>
+                <td>222524</td>
+                <td>Nullwertung</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 31.05.2026 16:30 fc kloten a fc brüttisellen-dietlikon 2:6 222523 gespielt"
+              >
+                <td>So 31.05.2026</td>
+                <td>16:30</td>
+                <td>FC Kloten a</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>2:6</td>
+                <td>222523</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 07.06.2026 10:30 fc wallisellen fc kloten a 3:4 222525 gespielt"
+              >
+                <td>So 07.06.2026</td>
+                <td>10:30</td>
+                <td>FC Wallisellen</td>
+                <td>FC Kloten a</td>
+                <td>3:4</td>
+                <td>222525</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 07.06.2026 13:00 fc embrach a fc diessenhofen 1:3 222529 gespielt"
+              >
+                <td>So 07.06.2026</td>
+                <td>13:00</td>
+                <td>FC Embrach a</td>
+                <td>FC Diessenhofen</td>
+                <td>1:3</td>
+                <td>222529</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 07.06.2026 13:30 fc bülach b fc bassersdorf a 1:5 222527 gespielt"
+              >
+                <td>So 07.06.2026</td>
+                <td>13:30</td>
+                <td>FC Bülach b</td>
+                <td>FC Bassersdorf a</td>
+                <td>1:5</td>
+                <td>222527</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="forfait"
+                data-side="liga"
+                data-text="so 07.06.2026 13:30 fc brüttisellen-dietlikon fc phönix seen b 3:0 f 222526 forfait"
+              >
+                <td>So 07.06.2026</td>
+                <td>13:30</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>FC Phönix Seen b</td>
+                <td>3:0 F</td>
+                <td>222526</td>
+                <td>Forfait</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="heim"
+                data-text="so 07.06.2026 14:30 fc schwamendingen a fc oberwinterthur * 5:3 222528 gespielt"
+              >
+                <td>So 07.06.2026</td>
+                <td>14:30</td>
+                <td>FC Schwamendingen a</td>
+                <td>FC Oberwinterthur *</td>
+                <td>5:3</td>
+                <td>222528</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="mi 10.06.2026 20:15 fc diessenhofen fc oberwinterthur * 2:1 222519 gespielt"
+              >
+                <td>Mi 10.06.2026</td>
+                <td>20:15</td>
+                <td>FC Diessenhofen</td>
+                <td>FC Oberwinterthur *</td>
+                <td>2:1</td>
+                <td>222519</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 14.06.2026 10:00 fc phönix seen b fc wallisellen 3:0 222533 gespielt"
+              >
+                <td>So 14.06.2026</td>
+                <td>10:00</td>
+                <td>FC Phönix Seen b</td>
+                <td>FC Wallisellen</td>
+                <td>3:0</td>
+                <td>222533</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="gespielt"
+                data-side="auswärts"
+                data-text="so 14.06.2026 11:00 fc diessenhofen fc schwamendingen a 1:0 222530 gespielt"
+              >
+                <td>So 14.06.2026</td>
+                <td>11:00</td>
+                <td>FC Diessenhofen</td>
+                <td>FC Schwamendingen a</td>
+                <td>1:0</td>
+                <td>222530</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 14.06.2026 12:00 fc bassersdorf a fc brüttisellen-dietlikon 3:1 222532 gespielt"
+              >
+                <td>So 14.06.2026</td>
+                <td>12:00</td>
+                <td>FC Bassersdorf a</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>3:1</td>
+                <td>222532</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 14.06.2026 15:00 fc oberwinterthur * fc bülach b 2:1 222531 gespielt"
+              >
+                <td>So 14.06.2026</td>
+                <td>15:00</td>
+                <td>FC Oberwinterthur *</td>
+                <td>FC Bülach b</td>
+                <td>2:1</td>
+                <td>222531</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="nullwertung"
+                data-side="liga"
+                data-text="so 14.06.2026 16:15 fc kloten a fc kempttal 0:0 n 222534 nullwertung"
+              >
+                <td>So 14.06.2026</td>
+                <td>16:15</td>
+                <td>FC Kloten a</td>
+                <td>FC Kempttal</td>
+                <td>0:0 N</td>
+                <td>222534</td>
+                <td>Nullwertung</td>
+              </tr>
+              <tr
+                class="game-row team-focus"
+                data-status="forfait"
+                data-side="heim"
+                data-text="so 21.06.2026 11:00 fc schwamendingen a fc embrach a 3:0 f 222539 forfait"
+              >
+                <td>So 21.06.2026</td>
+                <td>11:00</td>
+                <td>FC Schwamendingen a</td>
+                <td>FC Embrach a</td>
+                <td>3:0 F</td>
+                <td>222539</td>
+                <td>Forfait</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 21.06.2026 12:30 fc bülach b fc diessenhofen 5:0 222538 gespielt"
+              >
+                <td>So 21.06.2026</td>
+                <td>12:30</td>
+                <td>FC Bülach b</td>
+                <td>FC Diessenhofen</td>
+                <td>5:0</td>
+                <td>222538</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 21.06.2026 13:00 fc brüttisellen-dietlikon fc oberwinterthur * 4:1 222537 gespielt"
+              >
+                <td>So 21.06.2026</td>
+                <td>13:00</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>FC Oberwinterthur *</td>
+                <td>4:1</td>
+                <td>222537</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="gespielt"
+                data-side="liga"
+                data-text="so 21.06.2026 14:00 fc wallisellen fc bassersdorf a 2:6 222536 gespielt"
+              >
+                <td>So 21.06.2026</td>
+                <td>14:00</td>
+                <td>FC Wallisellen</td>
+                <td>FC Bassersdorf a</td>
+                <td>2:6</td>
+                <td>222536</td>
+                <td>Gespielt</td>
+              </tr>
+              <tr
+                class="game-row"
+                data-status="nullwertung"
+                data-side="liga"
+                data-text="so 21.06.2026 16:00 fc kempttal fc phönix seen b 0:0 n 222535 nullwertung"
+              >
+                <td>So 21.06.2026</td>
+                <td>16:00</td>
+                <td>FC Kempttal</td>
+                <td>FC Phönix Seen b</td>
+                <td>0:0 N</td>
+                <td>222535</td>
+                <td>Nullwertung</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <p class="eyebrow reveal">Rangliste</p>
+        <h1 class="reveal">Tabelle – Frühjahrsrunde Gruppe 6</h1>
+        <div class="table-wrap reveal">
+          <table class="premium-table">
+            <thead>
+              <tr>
+                <th>Rang</th>
+                <th>Team</th>
+                <th>Sp</th>
+                <th>S</th>
+                <th>U</th>
+                <th>N</th>
+                <th>Tore</th>
+                <th>Diff.</th>
+                <th>Pkt.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>FC Bassersdorf a</td>
+                <td>10</td>
+                <td>8</td>
+                <td>1</td>
+                <td>1</td>
+                <td>40:16</td>
+                <td>+24</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>FC Diessenhofen</td>
+                <td>10</td>
+                <td>6</td>
+                <td>1</td>
+                <td>3</td>
+                <td>27:24</td>
+                <td>+3</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>FC Brüttisellen-Dietlikon</td>
+                <td>10</td>
+                <td>6</td>
+                <td>1</td>
+                <td>3</td>
+                <td>36:19</td>
+                <td>+17</td>
+                <td>18</td>
+              </tr>
+              <tr class="team-focus">
+                <td>4</td>
+                <td>FC Schwamendingen a</td>
+                <td>10</td>
+                <td>6</td>
+                <td>1</td>
+                <td>3</td>
+                <td>29:25</td>
+                <td>+4</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>FC Embrach a</td>
+                <td>10</td>
+                <td>4</td>
+                <td>2</td>
+                <td>4</td>
+                <td>24:23</td>
+                <td>+1</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>FC Bülach b</td>
+                <td>10</td>
+                <td>4</td>
+                <td>1</td>
+                <td>5</td>
+                <td>25:25</td>
+                <td>0</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>FC Oberwinterthur *</td>
+                <td>10</td>
+                <td>3</td>
+                <td>3</td>
+                <td>4</td>
+                <td>19:20</td>
+                <td>-1</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>FC Kloten a</td>
+                <td>10</td>
+                <td>3</td>
+                <td>1</td>
+                <td>6</td>
+                <td>19:30</td>
+                <td>-11</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>FC Phönix Seen b</td>
+                <td>10</td>
+                <td>2</td>
+                <td>1</td>
+                <td>7</td>
+                <td>13:29</td>
+                <td>-16</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>FC Wallisellen</td>
+                <td>10</td>
+                <td>1</td>
+                <td>2</td>
+                <td>7</td>
+                <td>21:42</td>
+                <td>-21</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <p class="eyebrow reveal">Saisonstatistik</p>
+        <h1 class="reveal">FC Schwamendingen a</h1>
+        <div class="stats reveal">
+          <div class="stat"><b data-count="9">0</b><span>Spiele</span></div>
+          <div class="stat"><b data-count="5">0</b><span>Siege</span></div>
+          <div class="stat">
+            <b data-count="0">0</b><span>Unentschieden</span>
+          </div>
+          <div class="stat">
+            <b data-count="4">0</b><span>Niederlagen</span>
+          </div>
+        </div>
+        <div class="stats reveal" style="margin-top: 18px">
+          <div class="stat"><b data-count="26">0</b><span>Tore</span></div>
+          <div class="stat"><b data-count="25">0</b><span>Gegentore</span></div>
+          <div class="stat">
+            <b data-count="1">0</b><span>Tordifferenz</span>
+          </div>
+          <div class="stat"><b data-count="18">0</b><span>Punkte</span></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Nikos Skartsolias. Persönliches Fussball Portfolio.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
